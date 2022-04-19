@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: ubuntu;
+}
+.calculator{
+    background-color: black;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px green solid;
+    border-radius: 2%;
+}
+.screen{
+    background-color: yellowgreen;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 2%;
+}
+.numpad{
+    background-color: silver;
+    width: 360px;
+    height: 360px;
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+    border: 1px black solid;
+    border-radius: 10%;
+    
+}
+.numbers{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+.numbers div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: royalblue;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 30px;
+}
+.operators{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+}
+.operators div, .numbers .equal, .numbers .clear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    background-color: royalblue;
+    border: 1px solid black;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 30px;
+}
